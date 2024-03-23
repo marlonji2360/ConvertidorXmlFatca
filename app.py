@@ -32,10 +32,10 @@ if datos is not None:
 
         st.success("Se han generado los archivos XML")
 
-        with open ('archivo_banco.xml') as aseg:
+        with open ('XML/archivo_banco.xml') as aseg:
             st.download_button('Descargar XML Banco', aseg,'XML/archivo_banco.xml')
              
-        with open ('archivo_aseguradora.xml') as aseg:
+        with open ('XML/archivo_aseguradora.xml') as aseg:
             st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_aseguradora.xml')
         #st.success("Se han generado los archivos XML")
         
