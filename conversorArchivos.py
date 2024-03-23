@@ -45,6 +45,7 @@ def xml_aseguradora(output_file, anio):
         archivo.write('</ftc:ReportingGroup>\n')
         archivo.write('</ftc:FATCA>\n')
         archivo.write('</ftc:FATCA_OECD>\n')
+        return archivo
 
 def xml_casa_bolsa(output_file, anio):
     # Abrir un archivo en modo de escritura ('w' para escritura).
@@ -251,6 +252,7 @@ def sql_to_xml(table, output_file, anio):
         archivo.write('</ftc:FATCA_OECD>')
         # Cierra la conexión a la base de datos
         connection.close()
+        return archivo
 
 # Llama a la función para insertar
 #csv_to_sql('DATOS_FATCA', 'C:\\Users\\marlon_jimenez\\Downloads\\FATCA 2023.xlsx')
