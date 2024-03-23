@@ -28,15 +28,15 @@ if datos is not None:
         archivo_casa_bolsa=ca.xml_casa_bolsa('XML/archivo_casa_de_bolsa.xml',anio)
         archivo_financiara=ca.xml_financiera("XML/archivo_financiera.xml",anio)
 
-        ca.comprimir_archivos('Archivos XML','XML/')
+        #ca.comprimir_archivos('Archivos XML','XML/')
 
         st.success("Se han generado los archivos XML")
 
         with open ('archivo_banco.xml') as aseg:
-            st.download_button('Descargar XML Banco', aseg,'archivo_banco.xml')
+            st.download_button('Descargar XML Banco', aseg,'XML/archivo_banco.xml')
              
         with open ('archivo_aseguradora.xml') as aseg:
-            st.download_button('Descargar XML Aseguradora', aseg,'archivo_aseguradora.xml')
+            st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_aseguradora.xml')
         #st.success("Se han generado los archivos XML")
         
         
