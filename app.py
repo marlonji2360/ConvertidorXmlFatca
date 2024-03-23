@@ -4,10 +4,10 @@ from pathlib import Path
 
 
 
-pathArchivosXML = Path(__file__).parent / "venv/XML/"
-pathImages = Path(__file__).parent / "venv/images/"
+#pathArchivosXML = Path(__file__).parent / "venv/XML/"
+#pathImages = Path(__file__).parent / "venv/images/"
 
-st.image(pathImages+'banner_bantrab.png')
+st.image('images/banner_bantrab.png')
 st.title(":blue[SISTEMA CONVERSIÓN XML FATCA]")
 
 
@@ -23,12 +23,12 @@ if datos is not None:
         #ca.xml_casa_bolsa("C:\\Temp\\archivo_casa_de_bolsa.xml",anio)
         #ca.xml_financiera("C:\\Temp\\archivo_financiera.xml",anio)
        
-        archivo_banco=ca.sql_to_xml('DATOS_FATCA',pathArchivosXML+'archivo_banco.xml',anio)
-        archivo_aseguradora=ca.xml_aseguradora(pathArchivosXML+'archivo_aseguradora.xml',anio) 
-        archivo_casa_bolsa=ca.xml_casa_bolsa(pathArchivosXML+'archivo_casa_de_bolsa.xml',anio)
-        archivo_financiara=ca.xml_financiera(pathArchivosXML+"archivo_financiera.xml",anio)
+        archivo_banco=ca.sql_to_xml('DATOS_FATCA','XML/archivo_banco.xml',anio)
+        archivo_aseguradora=ca.xml_aseguradora('XML/archivo_aseguradora.xml',anio) 
+        archivo_casa_bolsa=ca.xml_casa_bolsa('XML/archivo_casa_de_bolsa.xml',anio)
+        archivo_financiara=ca.xml_financiera("XML/archivo_financiera.xml",anio)
 
-        ca.comprimir_archivos('Archivos XML',pathArchivosXML)
+        ca.comprimir_archivos('Archivos XML','XML/')
 
         st.success("Se han generado los archivos XML")
 
