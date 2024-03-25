@@ -28,7 +28,7 @@ if datos is not None:
         archivo_casa_bolsa=ca.xml_casa_bolsa('XML/archivo_casa_de_bolsa.xml',anio)
         archivo_financiara=ca.xml_financiera("XML/archivo_financiera.xml",anio)
 
-        #ca.comprimir_archivos('Archivos XML','XML/')
+        ca.comprimir_archivos('Archivos_XML','XML/')
 
         st.success("Se han generado los archivos XML")
 
