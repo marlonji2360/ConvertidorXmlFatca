@@ -24,15 +24,15 @@ if datos is not None:
         #ca.xml_casa_bolsa("C:\\Temp\\archivo_casa_de_bolsa.xml",anio)
         #ca.xml_financiera("C:\\Temp\\archivo_financiera.xml",anio)
        
-        archivo_banco=ca.sql_to_xml('DATOS_FATCA','XML/archivo_banco.xml',anio)
-        archivo_aseguradora=ca.xml_aseguradora('XML/archivo_aseguradora.xml',anio) 
-        archivo_casa_bolsa=ca.xml_casa_bolsa('XML/archivo_casa_de_bolsa.xml',anio)
-        archivo_financiara=ca.xml_financiera("XML/archivo_financiera.xml",anio)
+        archivo_banco=ca.sql_to_xml('DATOS_FATCA','XML/1MMZME.00000.LE.320',anio)
+        archivo_aseguradora=ca.xml_aseguradora('XML/1MMZME.00003.ME.320.xml',anio) 
+        archivo_casa_bolsa=ca.xml_casa_bolsa('XML/1MMZME.00004.ME.320.xml',anio)
+        archivo_financiara=ca.xml_financiera("XML/1MMZME.00002.ME.320.xml",anio)
         
-        ca.formatearXml("XML/archivo_banco.xml")
-        ca.formatearXml("XML/archivo_aseguradora.xml")
-        ca.formatearXml("XML/archivo_casa_de_bolsa.xml")
-        ca.formatearXml("XML/archivo_financiera.xml")
+        ca.formatearXml("XML/1MMZME.00000.LE.320.xml")
+        ca.formatearXml("XML/1MMZME.00003.ME.320.xml")
+        ca.formatearXml("XML/1MMZME.00004.ME.320.xml")
+        ca.formatearXml("XML/1MMZME.00002.ME.320.xml")
 
         carpeta_a_comprimir = 'XML'
         archivo_zip_salida = 'archivo_comprimido.zip'
@@ -42,17 +42,17 @@ if datos is not None:
         
        
 
-        with open ('XML/archivo_banco.xml') as aseg:
-            st.download_button('Descargar XML Banco', aseg,'XML/archivo_banco.xml')
+        with open ('XML/1MMZME.00000.LE.320.xml') as aseg:
+            st.download_button('Descargar XML Banco', aseg,'XML/1MMZME.00000.LE.320.xml')
              
-        with open ('XML/archivo_aseguradora.xml') as aseg:
-            st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_aseguradora.xml')
+        with open ('XML/1MMZME.00003.ME.320.xml') as aseg:
+            st.download_button('Descargar XML Aseguradora', aseg,'XML/1MMZME.00003.ME.320.xml')
             
-        with open ('XML/archivo_casa_de_bolsa.xml') as aseg:
-            st.download_button('Descargar XML Casa de bolsa', aseg,'XML/archivo_casa_de_bolsa.xml')
+        with open ('XML/1MMZME.00004.ME.320.xml') as aseg:
+            st.download_button('Descargar XML Casa de bolsa', aseg,'XML/1MMZME.00004.ME.320.xml')
         
-        with open ('XML/archivo_financiera.xml') as aseg:
-            st.download_button('Descargar XML Financiera', aseg,'XML/archivo_financiera.xml')
+        with open ('XML/1MMZME.00002.ME.320.xml') as aseg:
+            st.download_button('Descargar XML Financiera', aseg,'XML/1MMZME.00002.ME.320.xml')
             
         
         
