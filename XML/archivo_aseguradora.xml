@@ -1,36 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ftc:FATCA_OECD xmlns:xsi="http:www.w3.org2001XMLSchema-instance" xsi:schemaLocation="urn:oecd:ties:fatca:v2" xmlns:iso="urn:oecd:ties:isofatcatypes:v1" xmlns:ftc="urn:oecd:ties:fatca:v2" xmlns:stf="urn:oecd:ties:stf:v4" xmlns:sfa="urn:oecd:ties:stffatcatypes:v2" version="2.0">
-<ftc:MessageSpec>
-<sfa:SendingCompanyIN>1MMZME.00003.ME.320</sfa:SendingCompanyIN>
-<sfa:TransmittingCountry>GT</sfa:TransmittingCountry>
-<sfa:ReceivingCountry>US</sfa:ReceivingCountry>
-<sfa:MessageType>FATCA</sfa:MessageType>
-<sfa:MessageRefId>7e66621d-08c4-4f65-991c-e3f35e149d0e</sfa:MessageRefId>
-<sfa:ReportingPeriod>2025-12-31</sfa:ReportingPeriod>
-<sfa:Timestamp>2025-03-12T19:30:27Z</sfa:Timestamp>
-</ftc:MessageSpec>
-<ftc:FATCA>
-<ftc:ReportingFI>
-<sfa:ResCountryCode>GT</sfa:ResCountryCode>
-<sfa:TIN issuedBy="US">1MMZME.00003.ME.320</sfa:TIN>
-<sfa:Name>ASEGURADORA DE LOS TRABAJADORES</sfa:Name>
-<sfa:Address>
-<sfa:CountryCode>GT</sfa:CountryCode>
-<sfa:AddressFree>AVENIDA REFORMA 6 20 ZONA 9 GUATEMALA</sfa:AddressFree>
-</sfa:Address>
-<ftc:FilerCategory>FATCA601</ftc:FilerCategory><ftc:DocSpec>
-<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
-<ftc:DocRefId>1MMZME.00003.ME.320.0dd90763-33f2-4613-b84e-55ac8532b1d6</ftc:DocRefId>
-</ftc:DocSpec>
-</ftc:ReportingFI>
-<ftc:ReportingGroup>
-<ftc:NilReport>
-<ftc:DocSpec>
-<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
-<ftc:DocRefId>1MMZME.00003.ME.320.a2b3122a-1122-455b-a258-4456b59b5c0a</ftc:DocRefId>
-</ftc:DocSpec>
-<ftc:NoAccountToReport>yes</ftc:NoAccountToReport>
-</ftc:NilReport>
-</ftc:ReportingGroup>
-</ftc:FATCA>
+<?xml version="1.0" ?>
+<ftc:FATCA_OECD xmlns:xsi="http:www.w3.org2001XMLSchema-instance" xmlns:iso="urn:oecd:ties:isofatcatypes:v1" xmlns:ftc="urn:oecd:ties:fatca:v2" xmlns:stf="urn:oecd:ties:stf:v4" xmlns:sfa="urn:oecd:ties:stffatcatypes:v2" xsi:schemaLocation="urn:oecd:ties:fatca:v2" version="2.0">
+	<ftc:MessageSpec>
+		<sfa:SendingCompanyIN>1MMZME.00003.ME.320</sfa:SendingCompanyIN>
+		<sfa:TransmittingCountry>GT</sfa:TransmittingCountry>
+		<sfa:ReceivingCountry>US</sfa:ReceivingCountry>
+		<sfa:MessageType>FATCA</sfa:MessageType>
+		<sfa:MessageRefId>165c642d-f289-4124-9968-a845ef158118</sfa:MessageRefId>
+		<sfa:ReportingPeriod>2025-12-31</sfa:ReportingPeriod>
+		<sfa:Timestamp>2025-03-12T20:01:23Z</sfa:Timestamp>
+	</ftc:MessageSpec>
+	<ftc:FATCA>
+		<ftc:ReportingFI>
+			<sfa:ResCountryCode>GT</sfa:ResCountryCode>
+			<sfa:TIN issuedBy="US">1MMZME.00003.ME.320</sfa:TIN>
+			<sfa:Name>ASEGURADORA DE LOS TRABAJADORES</sfa:Name>
+			<sfa:Address>
+				<sfa:CountryCode>GT</sfa:CountryCode>
+				<sfa:AddressFree>AVENIDA REFORMA 6 20 ZONA 9 GUATEMALA</sfa:AddressFree>
+			</sfa:Address>
+			<ftc:FilerCategory>FATCA601</ftc:FilerCategory>
+			<ftc:DocSpec>
+				<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
+				<ftc:DocRefId>1MMZME.00003.ME.320.a42e0ea2-08ab-41f6-8447-b3355acab2d2</ftc:DocRefId>
+			</ftc:DocSpec>
+		</ftc:ReportingFI>
+		<ftc:ReportingGroup>
+			<ftc:NilReport>
+				<ftc:DocSpec>
+					<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
+					<ftc:DocRefId>1MMZME.00003.ME.320.3f44f027-51ed-4711-bb0d-2f9b063a246e</ftc:DocRefId>
+				</ftc:DocSpec>
+				<ftc:NoAccountToReport>yes</ftc:NoAccountToReport>
+			</ftc:NilReport>
+		</ftc:ReportingGroup>
+	</ftc:FATCA>
 </ftc:FATCA_OECD>

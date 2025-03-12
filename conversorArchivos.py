@@ -4,6 +4,7 @@ import pandas as pd
 import sqlite3 as sql
 import zipfile
 import os
+import xml.dom.minidom
 
 def xml_aseguradora(output_file, anio):
     with open(output_file, 'w', encoding='utf-8') as archivo:
@@ -222,7 +223,7 @@ def sql_to_xml(table, output_file, anio):
             archivo.write('<sfa:TIN issuedBy="US" xmlns:sfa="urn:oecd:ties:stffatcatypes:v2">'+str(row[5])+'</sfa:TIN>\n')
             archivo.write('<sfa:Name xmlns:sfa="urn:oecd:ties:stffatcatypes:v2">\n')
             archivo.write('<sfa:FirstName>'+str(row[7])+'</sfa:FirstName>\n')
-            archivo.write('<sfa:MiddleName>'+str(row[8])+'</sfa:MiddleName>\n')
+            #archivo.write('<sfa:MiddleName>'+str(row[8])+'</sfa:MiddleName>\n')
             archivo.write('<sfa:LastName>'+str(row[9])+'</sfa:LastName>\n')
             archivo.write('</sfa:Name>\n')
             archivo.write('<sfa:Address xmlns:sfa="urn:oecd:ties:stffatcatypes:v2">\n')
@@ -262,6 +263,23 @@ def comprimir_carpeta(carpeta, archivo_zip):
                 ruta_completa = os.path.join(carpeta_raiz, archivo)
                 ruta_relativa = os.path.relpath(ruta_completa, carpeta)
                 zipf.write(ruta_completa, ruta_relativa)
+                
+def formatearXml(archivoXml):
+# Cargar el archivo XML
+    with open(archivoXml, 'r') as file:
+        xml_content = file.read()
+
+    # Parsear el contenido XML
+    dom = xml.dom.minidom.parseString(xml_content)
+
+    # Formatear el contenido XML con indentación y eliminar saltos de línea innecesarios
+    formatted_xml = '\n'.join([line for line in dom.toprettyxml().split('\n') if line.strip()])
+
+    # Guardar el contenido XML formateado en un nuevo archivo
+    with open(archivoXml, 'w') as file:
+        file.write(formatted_xml)
+
+    
 
 # Llama a la función para insertar
 #csv_to_sql('DATOS_FATCA', 'C:\\Users\\marlon_jimenez\\Downloads\\FATCA 2023.xlsx')
