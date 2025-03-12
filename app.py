@@ -1,6 +1,7 @@
 import streamlit as st
 import conversorArchivos  as ca
 from pathlib import Path
+import os
 
 
 
@@ -28,15 +29,26 @@ if datos is not None:
         archivo_casa_bolsa=ca.xml_casa_bolsa('XML/archivo_casa_de_bolsa.xml',anio)
         archivo_financiara=ca.xml_financiera("XML/archivo_financiera.xml",anio)
 
-        ca.comprimir_archivos('Archivos_XML','XML/')
+        carpeta_a_comprimir = 'XML'
+        archivo_zip_salida = 'archivo_comprimido.zip'
+        ca.comprimir_carpeta(carpeta_a_comprimir, archivo_zip_salida)
 
         st.success("Se han generado los archivos XML")
+        
+       
 
         with open ('XML/archivo_banco.xml') as aseg:
             st.download_button('Descargar XML Banco', aseg,'XML/archivo_banco.xml')
              
         with open ('XML/archivo_aseguradora.xml') as aseg:
             st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_aseguradora.xml')
-        #st.success("Se han generado los archivos XML")
+            
+        with open ('XML/archivo_aseguradora.xml') as aseg:
+            st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_casa_de_bolsa.xml')
+        
+        with open ('XML/archivo_aseguradora.xml') as aseg:
+            st.download_button('Descargar XML Aseguradora', aseg,'XML/archivo_financiera.xml')
+            
+        
         
         

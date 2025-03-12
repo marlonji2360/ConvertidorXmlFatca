@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ftc:FATCA_OECD xmlns:xsi="http:www.w3.org2001XMLSchema-instance" xsi:schemaLocation="urn:oecd:ties:fatca:v2" xmlns:iso="urn:oecd:ties:isofatcatypes:v1" xmlns:ftc="urn:oecd:ties:fatca:v2" xmlns:stf="urn:oecd:ties:stf:v4" xmlns:sfa="urn:oecd:ties:stffatcatypes:v2" version="2.0">
+<ftc:MessageSpec>
+<sfa:SendingCompanyIN>1MMZME.00002.ME.320</sfa:SendingCompanyIN>
+<sfa:TransmittingCountry>GT</sfa:TransmittingCountry>
+<sfa:ReceivingCountry>US</sfa:ReceivingCountry>
+<sfa:MessageType>FATCA</sfa:MessageType>
+<sfa:MessageRefId>4e10cd6e-28d5-4eac-b99f-712c8c85f45d</sfa:MessageRefId>
+<sfa:ReportingPeriod>2025-12-31</sfa:ReportingPeriod>
+<sfa:Timestamp>2025-03-12T19:30:27Z</sfa:Timestamp>
+</ftc:MessageSpec>
+<ftc:FATCA>
+<ftc:ReportingFI>
+<sfa:ResCountryCode>GT</sfa:ResCountryCode>
+<sfa:TIN issuedBy="US">1MMZME.00002.ME.320</sfa:TIN>
+<sfa:Name>FINANCIERA DE LOS TRABAJADORES</sfa:Name>
+<sfa:Address>
+<sfa:CountryCode>GT</sfa:CountryCode>
+<sfa:AddressFree>AVENIDA REFORMA 6 20 ZONA 9 GUATEMALA</sfa:AddressFree>
+</sfa:Address>
+<ftc:FilerCategory>FATCA601</ftc:FilerCategory><ftc:DocSpec>
+<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
+<ftc:DocRefId>1MMZME.00002.ME.320.78b0c5c2-a51c-4995-9739-2ffa278b0f2a</ftc:DocRefId>
+</ftc:DocSpec>
+</ftc:ReportingFI>
+<ftc:ReportingGroup>
+<ftc:NilReport>
+<ftc:DocSpec>
+<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
+<ftc:DocRefId>1MMZME.00002.ME.320.3220cb52-68b1-4e21-880d-f5429d90001a</ftc:DocRefId>
+</ftc:DocSpec>
+<ftc:NoAccountToReport>yes</ftc:NoAccountToReport>
+</ftc:NilReport>
+</ftc:ReportingGroup>
+</ftc:FATCA>
+</ftc:FATCA_OECD>

@@ -1,8 +1,9 @@
-import pyodbc
 import uuid
 import datetime
 import pandas as pd
 import sqlite3 as sql
+import zipfile
+import os
 
 def xml_aseguradora(output_file, anio):
     with open(output_file, 'w', encoding='utf-8') as archivo:
@@ -198,7 +199,7 @@ def sql_to_xml(table, output_file, anio):
         archivo.write('<sfa:CountryCode>GT</sfa:CountryCode>\n')
         archivo.write('<sfa:AddressFree>AVENIDA REFORMA 6 20 ZONA 9 GUATEMALA</sfa:AddressFree>\n')
         archivo.write('</sfa:Address>\n')
-        archivo.write('<ftc:FilerCategory>FATCA601</ftc:FilerCategory>')
+        archivo.write('<ftc:FilerCategory>FATCA601</ftc:FilerCategory>\n')
         archivo.write('<ftc:DocSpec>\n')
         archivo.write('<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>\n')
         archivo.write('<ftc:DocRefId>1MMZME.00000.LE.320.'+str(uuid.uuid4())+'</ftc:DocRefId>\n')
@@ -253,6 +254,14 @@ def sql_to_xml(table, output_file, anio):
         # Cierra la conexión a la base de datos
         connection.close()
         return archivo
+    
+def comprimir_carpeta(carpeta, archivo_zip):
+    with zipfile.ZipFile(archivo_zip, 'w') as zipf:
+        for carpeta_raiz, _, archivos in os.walk(carpeta):
+            for archivo in archivos:
+                ruta_completa = os.path.join(carpeta_raiz, archivo)
+                ruta_relativa = os.path.relpath(ruta_completa, carpeta)
+                zipf.write(ruta_completa, ruta_relativa)
 
 # Llama a la función para insertar
 #csv_to_sql('DATOS_FATCA', 'C:\\Users\\marlon_jimenez\\Downloads\\FATCA 2023.xlsx')
