@@ -1,19 +1,19 @@
 <?xml version="1.0" ?>
 <ftc:FATCA_OECD xmlns:xsi="http:www.w3.org2001XMLSchema-instance" xmlns:iso="urn:oecd:ties:isofatcatypes:v1" xmlns:ftc="urn:oecd:ties:fatca:v2" xmlns:stf="urn:oecd:ties:stf:v4" xmlns:sfa="urn:oecd:ties:stffatcatypes:v2" xsi:schemaLocation="urn:oecd:ties:fatca:v2" version="2.0">
 	<ftc:MessageSpec>
-		<sfa:SendingCompanyIN>1MMZME.00004.ME.320</sfa:SendingCompanyIN>
+		<sfa:SendingCompanyIN>1MMZME.00002.ME.320</sfa:SendingCompanyIN>
 		<sfa:TransmittingCountry>GT</sfa:TransmittingCountry>
 		<sfa:ReceivingCountry>US</sfa:ReceivingCountry>
 		<sfa:MessageType>FATCA</sfa:MessageType>
-		<sfa:MessageRefId>cd62666c-7c2e-49b1-bee0-d52331332a9a</sfa:MessageRefId>
+		<sfa:MessageRefId>b3d44e9b-0e2f-4c1f-9828-a8fd58beb5eb</sfa:MessageRefId>
 		<sfa:ReportingPeriod>2024-12-31</sfa:ReportingPeriod>
-		<sfa:Timestamp>2025-03-12T21:51:31Z</sfa:Timestamp>
+		<sfa:Timestamp>2025-03-12T22:02:10Z</sfa:Timestamp>
 	</ftc:MessageSpec>
 	<ftc:FATCA>
 		<ftc:ReportingFI>
 			<sfa:ResCountryCode>GT</sfa:ResCountryCode>
-			<sfa:TIN issuedBy="US">1MMZME.00004.ME.320</sfa:TIN>
-			<sfa:Name>CASA DE BOLSA DE LOS TRABAJADORES</sfa:Name>
+			<sfa:TIN issuedBy="US">1MMZME.00002.ME.320</sfa:TIN>
+			<sfa:Name>FINANCIERA DE LOS TRABAJADORES</sfa:Name>
 			<sfa:Address>
 				<sfa:CountryCode>GT</sfa:CountryCode>
 				<sfa:AddressFree>AVENIDA REFORMA 6 20 ZONA 9 GUATEMALA</sfa:AddressFree>
@@ -21,14 +21,14 @@
 			<ftc:FilerCategory>FATCA601</ftc:FilerCategory>
 			<ftc:DocSpec>
 				<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
-				<ftc:DocRefId>1MMZME.00004.ME.320.49dfcaa4-0dad-487a-82db-b8581b74f602</ftc:DocRefId>
+				<ftc:DocRefId>1MMZME.00002.ME.320.493b3fed-4ed6-49ae-8f59-bb709ec3ffa3</ftc:DocRefId>
 			</ftc:DocSpec>
 		</ftc:ReportingFI>
 		<ftc:ReportingGroup>
 			<ftc:NilReport>
 				<ftc:DocSpec>
 					<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
-					<ftc:DocRefId>1MMZME.00004.ME.320.261ce083-e5ca-40b3-b406-766b56a5d929</ftc:DocRefId>
+					<ftc:DocRefId>1MMZME.00002.ME.320.ec1a0fae-b6f5-4ef9-8623-5ac3c32a2fd8</ftc:DocRefId>
 				</ftc:DocSpec>
 				<ftc:NoAccountToReport>yes</ftc:NoAccountToReport>
 			</ftc:NilReport>

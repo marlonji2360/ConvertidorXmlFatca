@@ -24,7 +24,7 @@ if datos is not None:
         #ca.xml_casa_bolsa("C:\\Temp\\archivo_casa_de_bolsa.xml",anio)
         #ca.xml_financiera("C:\\Temp\\archivo_financiera.xml",anio)
        
-        archivo_banco=ca.sql_to_xml('DATOS_FATCA','XML/1MMZME.00000.LE.320',anio)
+        archivo_banco=ca.sql_to_xml('DATOS_FATCA','XML/1MMZME.00000.LE.320.xml',anio)
         archivo_aseguradora=ca.xml_aseguradora('XML/1MMZME.00003.ME.320.xml',anio) 
         archivo_casa_bolsa=ca.xml_casa_bolsa('XML/1MMZME.00004.ME.320.xml',anio)
         archivo_financiara=ca.xml_financiera("XML/1MMZME.00002.ME.320.xml",anio)

@@ -5,9 +5,9 @@
 		<sfa:TransmittingCountry>GT</sfa:TransmittingCountry>
 		<sfa:ReceivingCountry>US</sfa:ReceivingCountry>
 		<sfa:MessageType>FATCA</sfa:MessageType>
-		<sfa:MessageRefId>02d0de43-f5eb-4866-a0ac-57801e899c1f</sfa:MessageRefId>
+		<sfa:MessageRefId>80948a31-42e3-4afe-a821-b94c822866c0</sfa:MessageRefId>
 		<sfa:ReportingPeriod>2024-12-31</sfa:ReportingPeriod>
-		<sfa:Timestamp>2025-03-12T21:51:31Z</sfa:Timestamp>
+		<sfa:Timestamp>2025-03-12T22:02:10Z</sfa:Timestamp>
 	</ftc:MessageSpec>
 	<ftc:FATCA>
 		<ftc:ReportingFI>
@@ -21,7 +21,7 @@
 			<ftc:FilerCategory>FATCA601</ftc:FilerCategory>
 			<ftc:DocSpec>
 				<ftc:DocTypeIndic>FATCA1</ftc:DocTypeIndic>
-				<ftc:DocRefId>1MMZME.00000.LE.320.5349a771-0063-41b8-ba11-0ad2e90a23c1</ftc:DocRefId>
+				<ftc:DocRefId>1MMZME.00000.LE.320.e5c0cbb0-1866-475c-98cf-5108d6982d3e</ftc:DocRefId>
 			</ftc:DocSpec>
 		</ftc:ReportingFI>
 		<ftc:ReportingGroup>
